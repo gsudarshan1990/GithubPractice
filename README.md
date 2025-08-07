@@ -1,3 +1,10 @@
+## 👋 About Me
+I’m learning GitHub and building cool automation stuff along the way.
+
+## 🌱 Current Focus
+- Exploring GitHub Discussions
+- Learning Markdown and making my first commits
+
 This is used for practicing the lists and checklists
 
 Lists
@@ -12,11 +19,6 @@ CheckLists
 - [ ] CI/CD Completed
 - [ ] Wiki
 
-## 👋 About Me
-I’m learning GitHub and building cool automation stuff along the way.
 
-## 🌱 Current Focus
-- Exploring GitHub Discussions
-- Learning Markdown and making my first commits
 
 
