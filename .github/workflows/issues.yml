@@ -1,0 +1,13 @@
+name: Issue Automation
+on:
+  issues:
+    types: opened
+jobs:
+  welcome-issues:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Issue Details
+       run: echo "Displaying issue details after creating the issues in github"
+            echo "${{github.event.issue.user.login}}"
+            echo "${{github.event.issue.title}}"
+  
