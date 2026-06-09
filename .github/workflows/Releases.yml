@@ -1,0 +1,22 @@
+name : Release Details
+on:
+  release:
+    types: created
+jobs:
+   Release Detail Display:
+    runs-on: ubuntu-latest
+    steps:
+      - name : Display Release ID and tag
+        run: |
+            echo "Release ID : $${{github.event.release.id}}"
+            echo "Release tag : $${{github.event.release.tag_name}}"
+            echo "Author Name:$${{github.event.release.author}}"
+      - name : Release body
+        run: echo "Release body :${{github.event.release.body}}"
+      
+
+
+  
+        
+            
+    
