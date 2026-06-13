@@ -32,4 +32,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo $HOME
-          echo "Current Working Directory:$(PWD)"
+          echo "Current Working Directory:$(pwd)"
+          ls -a > files.txt
+          cat files.txt
