@@ -1,0 +1,19 @@
+name: CI Practice
+on: push
+jobs:
+  npm_commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Lint setup
+        run : npm run lint
+
+      - name : set up node
+        uses: actions/setup-node@v4
+        with:
+          version: '20'
+
+      - name: set up java
+        uses: actions/setup-java@v2
