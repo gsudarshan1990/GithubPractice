@@ -1,0 +1,24 @@
+name: Github actions demo
+on: push
+jobs:
+  Explore_Github_actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run : echo "The job was triggered by the event $${{github.event_name}}"
+      - run : echo "The job runs on the $${{runner.os}} hosted on the Github!"
+      - run : echo "The job belongs to the brach $${{github.ref}}"
+      - run : echo " The job runs on the branch $${{github.repository}}"
+      - run: echo "Token is $${{github.token}}"
+      
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - run: echo "$${{github.repository}} is cloned to the runner"
+      - run: echo "The workflow runs on the runner"
+
+      - name: List files in the repository
+        run: |
+            ls $${{github.workspace}}
+      - run: echo "The status of job is $${{job.status}}"
+
+      
+      
