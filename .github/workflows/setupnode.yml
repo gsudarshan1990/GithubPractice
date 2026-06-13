@@ -27,4 +27,4 @@ jobs:
             echo "Runner OS: $RUNNER_OS"
             echo "Workflow : $GITHUB_WORKFLOW"
             echo "Event name : $GITHUB_EVENT_NAME"
-            echo"$${{github.job}}
+            echo  "$${{github.job}}"
